@@ -15,7 +15,7 @@ class TodoController
         $todos = Todo::all();
         $str = __DIR__ . '/../view/index.php';
 
-        include_once $str;
+        require_once $str;
     }
 
     public static function addTodo()

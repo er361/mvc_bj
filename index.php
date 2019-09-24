@@ -5,10 +5,15 @@
  * Date: 20.09.2019
  * Time: 16:02
  */
+ini_set ('display_errors', 'on');
+ini_set ('log_errors', 'on');
+ini_set ('display_startup_errors', 'on');
+ini_set ('error_reporting', E_ALL);
 
+//echo phpinfo();
 
-include "app/controllers/TodoController.php";
-include "app/controllers/AuthController.php";
+require_once "app/controllers/TodoController.php";
+require_once "app/controllers/AuthController.php";
 
 $request = $_SERVER['REQUEST_URI'];
 
