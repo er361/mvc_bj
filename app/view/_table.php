@@ -14,7 +14,7 @@
         <th>Text</th>
         <th>Status</th>
 
-        <? if ($_SESSION['is_admin']): ?>
+        <? if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']): ?>
             <th>Action</th>
         <? endif; ?>
 
